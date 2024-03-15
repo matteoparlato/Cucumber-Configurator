@@ -35,7 +35,7 @@ Specifies the type of relation between characteristics. It can be one of the fol
 "Mandatory": Indicates that certain characteristics are mandatory based on the value of another characteristic or a conditions.
 "Optional": Specifies that certain characteristics are optional based on the value of another characteristir a conditions.
 "filter": Defines conditions under which certain characteristics or sets of characteristics or conditions should be filtered or displayed.
-"check condition": define if a value is selected shoud appair an error or an allert.
+"check condition": define if a value is selected should appear an error or an allert.
 primaryCharacteristicCode:
 
 Identifies the primary characteristic involved in the relation. It refers to the characteristic code.
@@ -48,16 +48,13 @@ Specifies any additional conditions under which the relation applies. if the con
 enableCharacteristicsSetCode:
 
 don't set this field for the moment .
-characteristicsSetCode:
-
-
-don't set this field for the moment .
 secondaryCharacteristicValue:
 
-Represents the value of the secondary characteristic involved in the relation. This is applicable for "transfer Value" relations, and "filter" relations. if the condition are true (if the relation type is "transfer value": during the configuration if the primary characteristic is valued with the primary caracteritic value you have to transfer to the caracteristic in the field "secondary characteristic code" the value in the field "second caracteristic value"). 
-(if the relation type is "filter": during the configuration if the primary characteristic is valued with the primary caracteritic value you have to filter the caracteristic in the field "secondary characteristic code" with all the values in the field "second caracteristic value").
-(if the relation type is "optional": during the configuration if the primary characteristic is valued with the primary caracteritic value you have to set the caracteristic in the field "secondary characteristic code" as "optional" so its no more mandatory to finish the configuration).
-(if the relation type is "mandatory": during the configuration if the primary characteristic is valued with the primary caracteritic value you have to set the caracteristic in the field "secondary characteristic code" as "mandatory" so its no more optional to finish the configuration).
+Represents the value of the secondary characteristic involved in the relation. This is applicable for "transfer Value" relations,"filter" relations, "optional" and "mandatory" relations. if the conditions are true:
+- if the relation type is "transfer value": during the configuration if the primary characteristic is valued with the primary caracteritic value you have to transfer to the caracteristic in the field "secondary characteristic code" the value in the field "second caracteristic value"). 
+- if the relation type is "filter": during the configuration if the primary characteristic is valued with the primary caracteritic value you have to filter the caracteristic in the field "secondary characteristic code" with all the values in the field "second caracteristic value").
+- if the relation type is "optional": during the configuration if the primary characteristic is valued with the primary caracteritic value you have to set the caracteristic in the field "secondary characteristic code" as "optional" so its no more mandatory to finish the configuration).
+- if the relation type is "mandatory": during the configuration if the primary characteristic is valued with the primary caracteritic value you have to set the caracteristic in the field "secondary characteristic code" as "mandatory" so its no more optional to finish the configuration).
 transferValueFormula:
 
 Specifies any formula or calculation to be applied when transferring values between characteristics. 
@@ -66,7 +63,7 @@ roundingPrecision:
 Defines the precision (number of decimal places) to which values should be rounded.
 roundingDirection:
 
-Indicates the direction of rounding, such as "up" or "down".
+don't set this field for the moment.
 formulaCode:
 
 don't set this field for the moment.
