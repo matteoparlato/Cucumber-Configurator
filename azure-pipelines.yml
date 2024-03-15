@@ -1,0 +1,30 @@
+# Azure Pipeline to automate the build of the App.
+
+# When you build on a SaaS environment, then uncomment the variables section,
+# and define a variable group 'Build' within the variable 'refreshToken'.
+# Use as the build template 'Apps-Build-SaaS.yml' file, that you can find in
+# bottom of this file, comment the current template 'Apps-Build-Full-v2.yml'.
+
+# use the variable group Build to store the 'refreshToken' variable as secret,
+# for authentication on the SaaS environment.
+# variables:
+#   - group: Build
+
+
+resources:
+  repositories:
+  - repository: templates
+    type: git
+    name: BC_Templates/bc.cicd
+
+
+trigger:
+  batch: true
+  branches:
+    include: 
+      - releases/*
+
+
+stages:
+- template: templates/Apps-Build-Full-v2.yml@templates
+# - template: templates/Apps-Build-SaaS.yml@templates

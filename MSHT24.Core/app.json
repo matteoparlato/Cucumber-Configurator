@@ -1,0 +1,39 @@
+{
+    "id": "425e6c29-f08b-4d5e-80f2-b5911f42c19c",
+    "name": "EOIHT24 Cucumber Core",
+    "publisher": "EOS Solutions",
+    "version": "23.0.0.27",
+    "brief": "Cucumber Core App by EOS Solutions for EOS AI Hackathon 2024.",
+    "description": "Cucumber Core App by EOS Solutions for EOS AI Hackathon 2024.",
+    "privacyStatement": "",
+    "EULA": "",
+    "help": "",
+    "url": "",
+    "logo": "",
+    "features": [
+      "TranslationFile"
+    ],
+    "supportedLocales": [
+      "en-US",
+      "it-IT"
+    ],
+    "dependencies": [
+      {
+        "id": "0fb12c8a-6c9e-407f-bb0e-9fee792ee665",
+        "name": "Product Configurator",
+        "publisher": "EOS Solutions",
+        "version": "23.0.22.0"
+      }
+    ],
+    "screenshots": [],
+    "platform": "23.0.0.0",
+    "application": "23.0.0.0",
+    "idRanges": [{"from": 65000,"to": 65149}],
+    "resourceExposurePolicy": {
+      "allowDebugging": true,
+      "allowDownloadingSource": false,
+      "includeSourceInSymbolFile": false
+    },
+    "runtime": "12.1",
+    "target": "Cloud"
+  }

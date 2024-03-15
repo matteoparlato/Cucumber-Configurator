@@ -1,0 +1,57 @@
+{
+    "folders":  [            
+        {
+            "path": "."
+        },
+        {
+            "path":  "EOIHT24.Core"
+        }
+    ],
+    "settings": {
+        "al.packageCachePath":  "../.alpackages",
+        "al.enableCodeActions":  true,
+        "al.enableCodeAnalysis":  true,
+        "al.codeAnalyzers":  [
+            "${CodeCop}",
+            "${PerTenantExtensionCop}",
+            "${UICop}"
+        ],
+        "al.ruleSetPath":  "../config/AppRuleSet.json",
+        "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+        "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+        "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al"
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "SandboxGB",
+                "request": "launch",
+                "type": "al",
+                "environmentType": "Sandbox",
+                "environmentName": "SandboxGB",
+                "tenant": "f5d98b57-33d2-4f91-b46e-221dea9dedd2",
+                "startupObjectId": 22,
+                "startupObjectType": "Page",
+                "breakOnError": "All",
+                "launchBrowser": true,
+                "enableLongRunningSqlStatements": true,
+                "enableSqlInformationDebugger": true
+            },
+            {
+                "name": "GBDMD",
+                "request": "launch",
+                "type": "al",
+                "environmentType": "Sandbox",
+                "environmentName": "GBDMD",
+                "tenant": "29f6b2da-79e3-41ad-b16b-d4ecbae9f3b8",
+                "startupObjectId": 22,
+                "startupObjectType": "Page",
+                "breakOnError": "All",
+                "launchBrowser": true,
+                "enableLongRunningSqlStatements": true,
+                "enableSqlInformationDebugger": true
+            }
+        ]
+    }
+}
